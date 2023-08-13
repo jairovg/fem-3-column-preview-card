@@ -1,0 +1,25 @@
+{
+  "name": "@fem-cpc/static-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "prebuild": "rimraf dist",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fem-cpc/tokens": "^1.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.15",
+    "rimraf": "^5.0.1",
+    "sass": "^1.65.1",
+    "vite": "^4.4.9"
+  }
+}
