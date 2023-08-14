@@ -1,0 +1,11 @@
+@use '@fem-cpc/tokens/dist/scss/tokens' as *;
+
+.main {
+  max-width: ($fem-size-600 * 28) + $fem-size-500;
+  padding: ($fem-size-600 * 2) + $fem-size-500 $fem-size-500;
+
+  @media only screen and (min-width: $fem-breakpoint-sm) {
+    margin: 0 auto;
+    padding: ($fem-size-600 * 5) + $fem-size-400 0;
+  }
+}
