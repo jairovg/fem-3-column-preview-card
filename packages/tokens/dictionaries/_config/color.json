@@ -1,0 +1,29 @@
+{
+  "config": {
+    "color": {
+      "primary": {
+        "red": {
+          "light": {
+            "value": "#e28625"
+          }
+        },
+        "blue": {
+          "dark": {
+            "value": "#006971"
+          },
+          "darker": {
+            "value": "#004140"
+          }
+        }
+      },
+      "neutral": {
+        "lightest": {
+          "value": "#ffffff"
+        },
+        "light": {
+          "value": "#f2f2f2"
+        }
+      }
+    }
+  }
+}
