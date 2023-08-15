@@ -1,0 +1,19 @@
+@use '@fem-cpc/tokens/dist/scss/tokens' as *;
+@use '@/assets/styles/mixins' as *;
+
+.button {
+  @extend %color-animation;
+
+  width: fit-content;
+  text-transform: capitalize;
+  border-radius: $fem-size-500;
+  padding: ($fem-size-200 + $fem-size-300) $fem-size-600;
+  background-color: var(--fem-color-background-button-primary-rest);
+  color: var(--fem-color-text-button-primary-rest);
+
+  &:is(:hover, :focus) {
+    box-shadow: 0 0 0 2px var(--fem-color-border-button-primary-active);
+    background-color: var(--fem-color-background-button-primary-active);
+    color: var(--fem-color-text-button-primary-active);
+  }
+}

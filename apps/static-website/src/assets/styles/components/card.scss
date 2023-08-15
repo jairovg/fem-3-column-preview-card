@@ -1,0 +1,79 @@
+@use '@fem-cpc/tokens/dist/scss/mixins' as *;
+@use '@fem-cpc/tokens/dist/scss/tokens' as *;
+
+.card {
+  $card: &;
+
+  display: grid;
+  gap: $fem-size-500;
+  padding: $fem-size-600 + $fem-size-400;
+
+  &::before {
+    display: block;
+    content: '';
+    height: $fem-size-600 + $fem-size-400;
+  }
+
+  &--first {
+    border-radius: $fem-size-300 $fem-size-300 0 0;
+    background-color: var(--fem-color-background-primary);
+
+    @media only screen and (min-width: $fem-breakpoint-sm) {
+      border-radius: $fem-size-300 0 0 $fem-size-300;
+    }
+
+    &::before {
+      background: no-repeat url('@/assets/images/icon-sedans.svg');
+    }
+  }
+
+  &--middle {
+    background-color: var(--fem-color-background-secondary);
+
+    &::before {
+      background: no-repeat url('@/assets/images/icon-suvs.svg');
+    }
+
+    #{$card}__link {
+      &:not(:is(:hover, :focus)) {
+        color: var(--fem-color-background-secondary);
+      }
+    }
+  }
+
+  &--last {
+    border-radius: 0 0 $fem-size-300 $fem-size-300;
+    background-color: var(--fem-color-background-tertiary);
+
+    @media only screen and (min-width: $fem-breakpoint-sm) {
+      border-radius: 0 $fem-size-300 $fem-size-300 0;
+    }
+
+    &::before {
+      background: no-repeat url('@/assets/images/icon-luxury.svg');
+    }
+
+    #{$card}__link {
+      &:not(:is(:hover, :focus)) {
+        color: var(--fem-color-background-tertiary);
+      }
+    }
+  }
+
+  &__title {
+    @extend %fem-text-heading-sans-100;
+
+    text-transform: uppercase;
+    color: var(--fem-color-text-secondary);
+  }
+
+  &__body {
+    color: var(--fem-color-text-primary);
+  }
+
+  &__link {
+    @media only screen and (min-width: $fem-breakpoint-sm) {
+      margin-top: $fem-size-600 + $fem-size-500 + $fem-size-200;
+    }
+  }
+}
