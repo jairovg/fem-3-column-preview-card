@@ -1,0 +1,45 @@
+{
+  "config": {
+    "font": {
+      "family": {
+        "cursive": {
+          "value": "'Big Shoulders Display', cursive"
+        },
+        "sans": {
+          "value": "'Lexend Deca', sans-serif"
+        }
+      },
+      "style": {
+        "normal": {
+          "value": "normal"
+        }
+      },
+      "weight": {
+        "regular": {
+          "value": "400"
+        },
+        "bold": {
+          "value": "700"
+        }
+      },
+      "height": {
+        "100": {
+          "value": "25"
+        }
+      },
+      "size": {
+        "100": {
+          "value": "15"
+        },
+        "200": {
+          "value": "40"
+        }
+      },
+      "space": {
+        "100": {
+          "value": "4.38"
+        }
+      }
+    }
+  }
+}
