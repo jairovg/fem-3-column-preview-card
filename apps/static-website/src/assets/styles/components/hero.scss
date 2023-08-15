@@ -1,0 +1,8 @@
+@use '@fem-cpc/tokens/dist/scss/tokens' as *;
+
+.hero {
+  @media only screen and (min-width: $fem-breakpoint-sm) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
