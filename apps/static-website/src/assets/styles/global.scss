@@ -1,5 +1,8 @@
 @use '@fem-cpc/tokens/dist/css/colors.css';
+@use '@fem-cpc/tokens/dist/scss/mixins' as *;
 
 body {
+  @extend %fem-text-body-100;
+
   background-color: var(--fem-color-background-neutral);
 }
